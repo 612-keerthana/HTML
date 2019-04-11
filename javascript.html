@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title> HTML </title>
+</head>
+<center>
+<body>
+<form>
+Username:<input type="text" id="text1" maxlength="10"  minlength="3"><br><br>
+Password:<input type="password" id="pwd1" ><br><br>
+<input type="button" id="button1" value="CLICK" onclick="fun()">
+</form>
+<script>
+function fun()
+{
+ var uid=document.getElementById("text1").value
+ var pwd=document.getElementById("pwd1").value
+ if(uid==pwd)
+ {
+   document.write("Welcome " + uid);
+ }
+}
+</script>
+</body>
+</center>
+</html>
